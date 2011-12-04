@@ -2,9 +2,9 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 
+%define		pdir	Crypt
+%define		pnam	OpenSSL-PKCS12
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	OpenSSL-PKCS12
 Summary:	Crypt::OpenSSL::PKCS12 - Perl extension to OpenSSL's PKCS12 API
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.5
@@ -17,8 +17,8 @@ URL:		http://search.cpan.org/dist/%{pdir}-%{pnam}/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Pod::Coverage) >= 0.19
-BuildRequires:	perl(Test::Pod::Coverage) >= 1.08
+BuildRequires:	perl-Pod-Coverage >= 0.19
+BuildRequires:	perl-Test-Pod-Coverage >= 1.08
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +39,6 @@ This implements a small bit of OpenSSL's PKCS12 API.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
