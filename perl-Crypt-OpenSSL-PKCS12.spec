@@ -50,6 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README TODO
 %{perl_vendorarch}/%{pdir}/OpenSSL/*.pm
 %dir %{perl_vendorarch}/auto/%{pdir}/OpenSSL/PKCS12
-%{perl_vendorarch}/auto/%{pdir}/OpenSSL/PKCS12/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/OpenSSL/PKCS12/*.so
 %{_mandir}/man3/*
