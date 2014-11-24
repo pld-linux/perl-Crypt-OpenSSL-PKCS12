@@ -13,10 +13,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	910c0a01fa2458a1e33114ee1b5b9674
-URL:		http://search.cpan.org/dist/%{pdir}-%{pnam}/
+URL:		http://search.cpan.org/dist/Crypt-OpenSSL-PKCS12/
+BuildRequires:	perl(Module::Install) >= 1.12
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl(Module::Install) >= 1.12
 %if %{with tests}
 BuildRequires:	perl-Pod-Coverage >= 0.19
 BuildRequires:	perl-Test-Pod-Coverage >= 1.08
