@@ -7,12 +7,12 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::OpenSSL::PKCS12 - Perl extension to OpenSSL's PKCS12 API
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.7
+Version:	1.2
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	37e2c8bf80d815e9adf17cc641321287
+# Source0-md5:	b83ae74fa8c13eb9612155fac23dfa1a
 URL:		http://search.cpan.org/dist/Crypt-OpenSSL-PKCS12/
 BuildRequires:	perl(Module::Install) >= 1.12
 BuildRequires:	perl-devel >= 1:5.8.0
