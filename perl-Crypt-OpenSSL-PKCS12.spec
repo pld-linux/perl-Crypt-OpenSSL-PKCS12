@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	OpenSSL-PKCS12
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::OpenSSL::PKCS12 - Perl extension to OpenSSL's PKCS12 API
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.2
